@@ -150,6 +150,10 @@ console.log(a); // 6
 .
 ```
 
+## Comparison and Logical Operators
+
+Comparison operators are used in logical statements to determinne equality or difference between variables or value
+
 ## Strings
 
 ```js
@@ -278,11 +282,11 @@ sayHi();
 
 ```js
 function addition(num1, num2) {
-  return num1 + num2;
+  return num1 + num2; // return statement
 }
 
 var sum = addition(4, 3);
 console.log(sum); // 7
 ```
 
-- Add exercises for function here!!
+- Add exercises for function here!! (5mins)
