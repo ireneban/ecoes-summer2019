@@ -152,7 +152,14 @@ console.log(a); // 6
 
 ## Comparison and Logical Operators
 
-Comparison operators are used in logical statements to determinne equality or difference between variables or value
+- Comparison operators are used in logical statements to determinne equality or difference between variables or value.  
+  Table: https://www.w3schools.com/js/js_comparisons.asp
+
+- Logical Operators
+  Table
+
+````js
+
 
 ## Strings
 
@@ -160,7 +167,7 @@ Comparison operators are used in logical statements to determinne equality or di
 var name = "Mijeong";
 var str = "My name is " + name + ", how are you?";
 console.log(str);
-```
+````
 
 ## Data Structures
 
@@ -290,3 +297,113 @@ console.log(sum); // 7
 ```
 
 - Add exercises for function here!! (5mins)
+
+## Conditional Statements: if statement
+
+1. The `if` Statement
+
+```js
+if (condition) {
+  // code to be executed if the condition is true
+}
+```
+
+Example:
+
+```js
+var today = "Friday";
+if (today == "Friday") {
+  console.log("Today is Friday. TGIF!");
+}
+```
+
+2. The `else` Statement
+
+```js
+if (condition) {
+  // code to be executed if the condition is true
+} else {
+  // code to be executed if the condition is false
+}
+```
+
+Example:
+
+```js
+var today = "Friday";
+if (today == "Friday") {
+  console.log("Today is Friday. TGIF!");
+} else {
+  console.log("Today is not Friday :(");
+}
+```
+
+3. The `else if` Statement
+
+```js
+if (condition1) {
+  // code to be executed if condition1 is true
+} else if (condition2) {
+  //  code to be executed if the condition1 is false and condition2 is true
+} else {
+  //  code to be executed if the condition1 is false and condition2 is false
+}
+```
+
+Example:
+
+```js
+var today = "Friday";
+if (today == "Monday") {
+  console.log("Today is Monday.");
+} else if (today == "Tuesday") {
+  console.log("Today is Tuesday.");
+} else if (today == "Wednesday") {
+  console.log("Today is Wednesday.");
+} else if (today == "Thursday") {
+  console.log("Today is Tursday.");
+} else if (today == "Friday") {
+  console.log("Today is Friday.");
+} else if (today == "Saturday") {
+  console.log("Today is Saturday.");
+} else {
+  console.log("Today is Sunday.");
+}
+```
+
+Other Example: if statement and function
+
+```js
+function compare(a, b) {
+  if (a == b) {
+    console.log("They are equal");
+  } else {
+    console.log("They are not equal");
+  }
+}
+
+compare(2, 2);
+compare(3, 10);
+```
+
+## The For Loop
+
+```js
+for (statement1; statement2; statement3) {
+  // code to be executed
+}
+/*
+ * statement1 sets a variable before the loop starts
+ * statement2 defines the condition for the loop to run
+ * statement3 increases a value each time the code block in the loop has been executed
+ */
+```
+
+- Loops are useful when you want to run the same code over and over again.
+- Since we learned arrays, loops are very handy when you want to iterate an array.
+
+```js
+// show them an example for iterating elements on array
+// make them do exercises
+/* Push number 1 to 10 into an array */
+```
