@@ -184,4 +184,105 @@ var arr1 = [1, 2, 3];
 var arr2 = ["John", 23]; // elements can be any data type
 ```
 
-1. Access array data with Indexes
+1. Access/ Modify array data with Indexes
+
+- **Index starts with 0**
+
+```js
+var myArray = ["a", "b", "c", "d"];
+
+/* Access to the first data in array */
+var myData = myArray[0];
+console.log(myData);
+
+/* Modify the first element of the array */
+myArray[0] = "f";
+console.log(myArray);
+```
+
+2. Array Operations - `pop()`
+
+- The `pop()` method removes the last element from an array
+
+```js
+var students = ["John", "David", "Irene", "Alex"];
+/* pop the last element out of an array */
+var removed = students.pop();
+console.log(students);
+console.log(removed); // Alex: pop() method returns the value that was popped out
+```
+
+3. Array Operations - `push()`
+
+- The `push()` method adds a new element to an array at the end
+
+```js
+var students = ["John", "David", "Irene", "Alex"];
+/* push a new element into an array */
+var added = students.push("Steve");
+console.log(students);
+console.log(added); // 5: push() method returns the new array length
+```
+
+4. Array Operations - `shift()`
+
+- The `shift()` method removes the first array element and shfts all other elements to a lower index.
+
+```js
+var students = ["John", "David", "Irene", "Alex"];
+/* Removes the first element */
+var removed = students.shift();
+console.log(students);
+console.log(removed); // John: shift() method returns the element that was shifted out
+```
+
+5. Array Operations - `unshift()`
+
+- The `unshift()` method adds a new elemennt to an array at the beginning, and unshifts older elements
+
+```js
+var students = ["John", "David", "Irene", "Alex"];
+/* Adds a new element "Steven" */
+var added = students.unshift("Steve");
+console.log(students);
+console.log(added); // 5: unshift() method returns the new array length
+```
+
+## Function: Write Reusable Code
+
+Functions allow us to create reusable code. Instead of writing the same code repeatably, we can write a function to perform a particular task and use it whenever we want.
+
+- Syntax
+
+```js
+function name(parameter1, parameter2, ...) {
+    // code to be executed
+}
+```
+
+- Example
+
+```js
+/* Declare a function */
+function sayHi() {
+  console.log("Hi there!");
+}
+
+/* Call a function */
+sayHi();
+sayHi();
+sayHi();
+```
+
+- Passing values to functions with arguments
+
+```js
+function addition(num1, num2) {
+  return num1 + num2;
+}
+
+var sum = addition(4, 3);
+console.log(sum); // 7
+```
+
+- Add exercises for function here!!
